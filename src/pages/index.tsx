@@ -1,18 +1,17 @@
 import { useState } from 'react'
-import VConsole from 'vconsole'
 import { dumpSnapshots } from '../dataScripts/dumpSnapshots'
-
-let vConsole: VConsole | null = null
 
 export default () => {
   const [block, setBlock] = useState('')
 
   function run() {
-    vConsole = new VConsole()
+    import('vconsole').then(({ default: VConsole }) => {
+      const vConsole = new VConsole()
 
-    setTimeout(() => {
-      vConsole?.show()
-    }, 1500)
+      setTimeout(() => {
+        vConsole?.show()
+      }, 1500)
+    })
 
     dumpSnapshots(parseInt(block))
   }
