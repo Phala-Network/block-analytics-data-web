@@ -37,6 +37,26 @@ export default () => {
       >
         Run
       </button>
+
+      <div
+        style={{
+          marginTop: 20,
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://github.com/Phala-Network/block-analytics-data-web"
+        >
+          Github Code
+        </a>
+        &nbsp;/&nbsp;
+        <a
+          target="_blank"
+          href="https://app.netlify.com/sites/block-analytics-data-web/overview"
+        >
+          Netlify Deploy
+        </a>
+      </div>
     </div>
   )
 }
