@@ -1,0 +1,53 @@
+{
+  "name": "block-analytics-data-web",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run clean && gatsby build",
+    "develop": "npm run clean && gatsby develop -H 0.0.0.0",
+    "history-data": "ts-node ./src/historyData.ts",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phala-Network/block-analytics-data-web.git"
+  },
+  "keywords": [
+    "phala",
+    "block",
+    "analytics",
+    "data",
+    "web"
+  ],
+  "author": "phala-network",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phala-Network/block-analytics-data-web/issues"
+  },
+  "homepage": "https://github.com/Phala-Network/block-analytics-data-web#readme",
+  "dependencies": {
+    "@phala/typedefs": "^0.2.30",
+    "@polkadot/api": "^7.7.1",
+    "@types/luxon": "^2.0.9",
+    "@types/react": "^17.0.39",
+    "babel-plugin-styled-components": "^2.0.2",
+    "gatsby": "^4.7.1",
+    "gatsby-plugin-styled-components": "^5.7.0",
+    "gatsby-plugin-typescript": "^4.7.0",
+    "luxon": "^2.3.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-component": "^2.8.0",
+    "styled-components": "^5.3.3",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5",
+    "vconsole": "^3.11.2"
+  },
+  "browserslist": [
+    "last 10 chrome version",
+    "last 10 firefox version",
+    "last 2 safari version",
+    "last 10 edge version"
+  ]
+}
